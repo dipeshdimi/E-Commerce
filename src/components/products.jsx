@@ -1,8 +1,9 @@
-import {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react';
 import ProductCard from './subcomponents/productCard';
+import PropTypes from 'prop-types';
 
 export default function Products({category, searchKey}) {
-    // const url = "https://fakestoreapi.com/products/" + (category==="all" ? "" : ("category/"+category));
+
     const url = "https://fakestoreapi.com/products";
     const [prods, setProds] = useState([]);
 
@@ -18,7 +19,7 @@ export default function Products({category, searchKey}) {
 
     return (
         <section className='content'>
-            <h2>Men&apos;s & Women&apos;s Fashion</h2>
+            <h2>Today&apos;s Deals</h2>
             <div className="products">
             {prods.map(prod =>
                 (category==="all" || prod.category===category) && (prod.title.toLowerCase()).includes(searchKey.toLowerCase()) && 
@@ -28,3 +29,8 @@ export default function Products({category, searchKey}) {
       </section>
     );
 }
+
+Products.propTypes = {
+    category: PropTypes.string,
+    searchKey: PropTypes.string,
+};

@@ -1,6 +1,7 @@
-import Navbar from './subcomponents/navbar.jsx'
-import Functionality from './subcomponents/functionality.jsx'
-import Toggler from './subcomponents/toggler.jsx'
+import Navbar from './subcomponents/navbar.jsx';
+import Functionality from './subcomponents/functionality.jsx';
+import Toggler from './subcomponents/toggler.jsx';
+import PropTypes from 'prop-types';
 
 export default function Banner({handleChangeCategory, handleChangeSearchKey}) {
 
@@ -20,3 +21,8 @@ export default function Banner({handleChangeCategory, handleChangeSearchKey}) {
     </header>
   );
 }
+
+Banner.propTypes = {
+  handleChangeCategory: PropTypes.func,
+  handleChangeSearchKey: PropTypes.func,
+};

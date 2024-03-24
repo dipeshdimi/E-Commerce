@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
 export default function ProductCard({prod}) {
 
@@ -36,3 +37,7 @@ export default function ProductCard({prod}) {
         </div>
     );
 }
+
+ProductCard.propTypes = {
+    prod: PropTypes.object,
+};

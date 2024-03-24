@@ -33,6 +33,10 @@
     div.tagline {
       font-size: 2rem !important;
     }
+
+    div.cart_and_profile{
+      color: aliceblue !important;
+    }
   }
 }
 
@@ -70,6 +74,9 @@ header {
       color: #7e7e7e;
     }
     
+    .active {
+      text-decoration: underline;
+    }
   }
   
   h1 {

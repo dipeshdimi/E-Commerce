@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import Banner from './components/banner.jsx'
-import Products from './components/products.jsx'
+import { useState } from 'react';
+import './App.css';
+import Banner from './components/banner.jsx';
+import Products from './components/products.jsx';
 
 function App() {
 
@@ -24,4 +24,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

@@ -1,4 +1,4 @@
-// import { useState, useEffect } from "react";
+import PropTypes from 'prop-types';
 
 export default function Functionality({handleChangeCategory, handleChangeSearchKey}) {
     
@@ -8,6 +8,10 @@ export default function Functionality({handleChangeCategory, handleChangeSearchK
     
     const searchChange = (e) => {
         handleChangeSearchKey(e.target.value);
+    }
+
+    const handleAlert = () => {
+      alert("You're browsing as a Guest!!");
     }
 
     return (
@@ -46,10 +50,15 @@ export default function Functionality({handleChangeCategory, handleChangeSearchK
             CART
           </div>
 
-          <div className="cart_and_profile">
+          <div className="cart_and_profile" onClick={handleAlert}>
             <i className="fa fa-shopping-cart"></i>
             ME
           </div>
         </div>
     );
 }
+
+Functionality.propTypes = {
+  handleChangeCategory: PropTypes.func,
+  handleChangeSearchKey: PropTypes.func,
+};
