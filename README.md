@@ -18,7 +18,7 @@ This project is a basic eCommerce web application built using React.js and integ
 - **Frontend**: React.js, Fetch (for API requests), CSS for styling.
 - **API Integration**: FakeStoreAPI (https://fakestoreapi.com/).
 - **Responsive Design**: Built using modern CSS techniques to ensure responsiveness.
-- **Deployment**: (Optional - add deployment details if applicable).
+- **Deployment**: Vercel
 
 ## Getting Started
 
